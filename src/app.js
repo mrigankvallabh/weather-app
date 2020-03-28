@@ -18,7 +18,7 @@ const locWeather = require("./utils/locweather");
 // handlebars settings
 hbs.registerPartials(partialsDir);
 // App Settings
-let port;
+let port = process.env.PORT || 3000;
 app.set("port", port || 3000);
 app.set("view engine", "hbs");
 app.use(express.static(publicDir));
