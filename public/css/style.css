@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.img-small {
+  width: 100px;
+}
+
+.main {
+  min-height: 80vh;
+}
