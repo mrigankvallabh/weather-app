@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "node src/app.js",
     "dev": "nodemon src/app.js -e hbs,js"
   },
@@ -21,6 +22,10 @@
     "winston": "^3.2.1"
   },
   "devDependencies": {
+    "minimist": "^1.2.5",
     "nodemon": "^2.0.2"
+  },
+  "resolutions": {
+    "minimist": "^1.2.5"
   }
 }

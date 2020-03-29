@@ -13,7 +13,8 @@ myLogger.setLabel(filename);
 const axios = require("axios").default;
 
 const locWeather = ({ longitude, latitude, place }, callback) => {
-  const darkskyApiKey = process.env.DARKSKY_API_KEY;
+  const darkskyApiKey =
+    process.env.DARKSKY_API_KEY || "7b4e46ebbaf7ca7ead954dedc543ff1a";
   const url = `https://api.darksky.net/forecast/${darkskyApiKey}/${latitude},${longitude}`;
 
   axios
