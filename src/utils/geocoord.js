@@ -14,9 +14,8 @@ const axios = require("axios").default;
 
 const geoCoord = (address, callback) => {
   const mapboxApiKey =
-    process.env.MAPBOX_API_KEY ||
-    "pk.eyJ1IjoibXJpZ2Fua3ZhbGxhYmgiLCJhIjoiY2s3cmF3em5xMGM5NDNmbXYwZjE3a2JuMCJ9.g3P2kyUiT8tzPZ3pQWanYg";
-  const geoCodeUrl = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
+    process.env.MAPBOX_API_KEY
+    const geoCodeUrl = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
     address
   )}.json`;
 
