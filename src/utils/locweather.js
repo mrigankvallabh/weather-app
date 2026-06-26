@@ -14,7 +14,7 @@ const axios = require("axios").default;
 
 const locWeather = ({ longitude, latitude, place }, callback) => {
   const darkskyApiKey =
-    process.env.DARKSKY_API_KEY || "7b4e46ebbaf7ca7ead954dedc543ff1a";
+    process.env.DARKSKY_API_KEY;
   const url = `https://api.darksky.net/forecast/${darkskyApiKey}/${latitude},${longitude}`;
 
   axios
